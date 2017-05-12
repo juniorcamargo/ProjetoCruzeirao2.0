@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<h:html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:p="http://primefaces.org/ui">
+<h:head>
+	<meta charset="UTF-8" />
+	<title><ui:insert name="title">
+			Bateu - Campeonatos
+		</ui:insert></title>
+
+	<link href="css/index.css" rel="stylesheet" />
+	<h:outputStylesheet name="grid/grid.css" library="primefaces" />
+
+</h:head>
+<h:body>
+	<p:layout id="globalLayout" fullPage="true">
+
+		<!-- Painel Administrativo Menu Lateral -->
+		<p:layoutUnit position="west" collapsible="true" size="220" header="Membro">
+			<ui:include src="admarea/shared/sideBar.xhtml" />
+		</p:layoutUnit>
+		<p:layoutUnit position="center">
+			<!--Painel Administrativo Apresentação Pagina -->
+			<ui:insert name="description" >
+			<h2>Bem vindo - Template</h2>
+			<hr/>
+			
+			</ui:insert>
+			<!--Painel Administrativo Conteudo -->
+			<ui:insert name="principal" />
+		</p:layoutUnit>
+		
+	</p:layout>
+</h:body>
+</h:html>

@@ -1,0 +1,10 @@
+body {
+	margin: 0;
+}
+
+.sidebar {
+	height: 100%;
+	width: 220px;
+	background: #c1c1c1;
+	position: fixed;
+}

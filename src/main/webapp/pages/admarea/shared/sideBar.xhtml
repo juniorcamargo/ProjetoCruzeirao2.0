@@ -1,0 +1,41 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:p="http://primefaces.org/ui">
+	
+<div align="center">
+<IMG alt="Perfil Sem foto" src="../../../image/perfil/noimage.jpg" style="border-radius:80px; border:3px solid;  height: auto;width: 150px;" />
+<br/>
+<p:outputLabel>Nome Pessoa</p:outputLabel>
+<br/>
+<h:link value="Sair"   />
+</div>	
+	<h:form>
+		<p:growl autoUpdate="true" />
+		<p:panelMenu >
+			<p:submenu label="Campeonatos">
+				<p:menuitem value="Cadastrar Campeonato" icon="ui-icon-disk" />	
+				<p:menuitem value="Ver Campeonatos" icon="ui-icon-disk" />
+			</p:submenu>
+			<p:submenu label="Jogadores">
+				<p:menuitem value="Cadastrar Jogador" icon="ui-icon-disk" />
+				<p:menuitem value="Ver Locais" icon="ui-icon-disk" />
+			</p:submenu>
+			<p:submenu label="Times">
+				
+				<p:menuitem value="Cadastrar Campeonato" icon="ui-icon-disk" />
+				<p:menuitem value="Ver Locais" icon="ui-icon-disk" />
+			</p:submenu>
+			<p:submenu label="Partidas">
+				<p:menuitem value="Cadastrar Campeonato" icon="ui-icon-disk" />
+				<p:menuitem value="Ver Locais" icon="ui-icon-disk" />
+			</p:submenu>
+			<p:submenu label="Local Partida">
+				<p:menuitem value="Cadastrar Local" icon="ui-icon-disk" />
+				<p:menuitem value="Ver Locais" icon="ui-icon-disk" />
+			</p:submenu>
+		</p:panelMenu>
+	</h:form>
+
+</ui:composition>
